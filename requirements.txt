@@ -1,0 +1,6 @@
+numpy
+num2words
+eng_to_ipa
+PyYAML
+regex
+wyoming
