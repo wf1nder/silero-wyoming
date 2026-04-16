@@ -23,7 +23,7 @@ The current implementation is CPU-only.
 
 ## Build
 
-Image:
+Build locally:
 
 ```bash
 docker build -t silero-wyoming:cpu .
@@ -31,10 +31,18 @@ docker build -t silero-wyoming:cpu .
 
 ## Run
 
+Pull from Docker Hub:
+
+```bash
+docker pull wf1nder/silero-wyoming:latest
+```
+
+Run:
+
 ```bash
 docker run --rm --network host \
   -v /opt/silero-wyoming:/data \
-  silero-wyoming:cpu \
+  wf1nder/silero-wyoming:latest \
   --uri tcp://0.0.0.0:10209 \
   --state-dir /data \
   --language ru \
